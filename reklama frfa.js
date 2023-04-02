@@ -152,14 +152,14 @@
         };
        RegisterScript("Reklama_FRFA");
 
-function SendPhrases(allyChat = false, index = null) {
-    Chat.Say(allyChat ? 'DOTAChannelType_GameAllies' : 'DOTAChannelType_GameAll', allPhrases[phraseIndex]);
-    phraseIndex = (phraseIndex + 1) % allPhrases.length;
+ function SendPhrases(allyChat = false, index = null) {
+    Chat.Say(allyChat ? 'DOTAChannelType_GameAllies' : 'DOTAChannelType_GameAll', allPhrases[(phraseIndex + 1) % allPhrases.length]);
 }
 
 let allPhrases = [
     'Сосешь хуй? не беда',
-    'С новыми скриптами от Матвея (no_FRFA), ты сможешь наконец-то забыть вкус хуя и выигрывать'
+    'С новыми скриптами от Матвея (no_FRFA)''
+  'ты сможешь наконец-то забыть вкус хуя и выигрывать''
 ];
 
     })(mamaSorry || (mamaSorry = {}));
